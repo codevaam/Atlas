@@ -14,6 +14,7 @@
                 if (this.readyState == 4 && this.status == 200) {
                     var locations = JSON.parse(this.responseText);
                     for (var i = 0; i < 100; i++) {
+                        
                         cities.push(locations[Math.floor(Math.random() * 15493)])
                     }
                     localStorage.setItem('cities', JSON.stringify(cities));
