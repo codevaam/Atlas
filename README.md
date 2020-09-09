@@ -1,6 +1,6 @@
 # iwp-game
 
-[Play here](http://atlas-geoguesser.surge.sh/)
+[Play here](http://world-atlas.surge.sh/)
 
 ## About this game
 * Get random locations from google street view api
