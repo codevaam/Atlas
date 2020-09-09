@@ -1,3 +1,6 @@
+const key = config.apiKey;
+document.getElementById("googleapi").src="https://maps.googleapis.com/maps/api/js?key="+ key + "&callback=initialize&libraries=&v=weekly"
+
 function initialize() {
     var score = parseInt(localStorage.getItem('score'));
     document.getElementById('number').innerText = score;
