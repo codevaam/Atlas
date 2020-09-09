@@ -141,6 +141,7 @@ function initialize() {
                 preference: google.maps.StreetViewPreference.BEST,
                 source: google.maps.StreetViewSource.DEFAULT
             }
+            
             StreetViewService.getPanorama(request, callback);
         }
     }
