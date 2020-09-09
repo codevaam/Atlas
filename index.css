@@ -1,0 +1,52 @@
+body, html {
+    font-family: montserrat;
+}
+
+button {
+    text-decoration: none;
+    color: black;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.option {
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    padding: 50px 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: 0.5px solid black;
+}
+
+.game-type {
+    font-size: 20px;
+}
+
+.heading {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.about>ul, .about {
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('./static/font/Montserrat-Regular.ttf');
+}

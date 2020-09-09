@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Street View split-map-panes</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf263yGzCjXHFWfciwqMVkPF3-STbag6w&callback=initialize&libraries=&v=weekly"
+    defer></script>
+  <link rel="stylesheet" type="text/css" href="./game.css" />
+  <script src="./game.js"></script>
+</head>
+
+<body>
+  <div id="map"></div>
+  <div class="guessDiv">
+    <button id="guess">Guess</button>
+    <button id="next">Next</button>
+    <span id="score">Score = <span id="number">0</span></span>
+  </div>
+  <div id="pano"></div>
+</body>
+
+</html>

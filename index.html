@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./index.css">
+    <script>
+        function getCities() {
+            var cities = []
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var locations = JSON.parse(this.responseText);
+                    for (var i = 0; i < 100; i++) {
+                        cities.push(locations[Math.floor(Math.random() * 15493)])
+                    }
+                    localStorage.setItem('cities', JSON.stringify(cities));
+                    localStorage.setItem('questionNo', 0);
+                    localStorage.setItem('score', 0);
+                    window.location.href = '/game.html'
+                }
+            }
+            xmlhttp.open("GET", 'locations.json', true);
+            xmlhttp.send();
+            
+        }
+    </script>
+</head>
+
+<body>
+    <img src="./static/logo.png"/>
+    <div class="about">
+        <b>About this game</b>
+        <ul>
+            <li>Get random street views of places from around the world</li>
+            <li>Guess the place</li>
+            <li>Get points based on your estimation</li>
+            <li>*maximum points awarded: 100</li>
+        </ul>
+    </div>
+    <div class="row">
+        <button onclick="getCities()">
+            <div class="option">
+                <span class="game-type">START GAME</span><br><br>
+                <span>TEST YOUR GEOGRAPHICAL SKILLS</span>
+            </div>
+        </button>
+    </div>
+</body>
+
+</html>

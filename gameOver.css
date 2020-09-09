@@ -1,0 +1,31 @@
+html,body {
+    font-family: montserrat;
+}
+
+h2 {
+    text-align: center;
+}
+
+#score {
+    margin: auto;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    background-color: lightgreen;
+    justify-content: center;
+    width: 20%;
+    font-size: 50px;
+}
+
+a {
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('./static/font/Montserrat-Regular.ttf');
+  }
