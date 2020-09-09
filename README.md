@@ -1,4 +1,4 @@
-# iwp-game
+# ATLAS: iwp-game
 
 [Play here](http://world-atlas.surge.sh/)
 
